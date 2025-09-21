@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Un detalle especial para usted</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Un regalo especial para usted</h1>
+    <p>Con todo respeto y cariño, quiero dedicarle estas flores.</p>
+    <button id="mostrarFlores">Ver su regalo</button>
+    
+    <div class="flores" id="flores" style="display: none;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Red_tulip.jpg" alt="Tulipán rojo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg" alt="Girasol radiante">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Yellow_tulip_2014_G1.jpg" alt="Tulipán amarillo">
+    </div>
+  </div>
 
+  <!-- Música de fondo -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Su navegador no soporta audio.
+  </audio>
+
+  <!-- Corazones flotando -->
+  <div id="hearts"></div>
+
+  <!-- Pop-up sorpresa -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="cerrarPopup" class="cerrar">&times;</span>
+      <h2>Para usted 💛</h2>
+      <p>Estas flores simbolizan lo especial que es para mí.  
+      Le dedico este detalle con toda la admiración y cariño que merece.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
